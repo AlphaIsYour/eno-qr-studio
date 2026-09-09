@@ -2,6 +2,29 @@
   "name": "eno-qr-studio",
   "version": "0.1.0",
   "private": true,
+  "description": "A high-performance, client-side QR code studio web application with deep visual customization and batch CSV generation",
+  "keywords": [
+    "qr-code",
+    "qr-generator",
+    "nextjs",
+    "react",
+    "typescript",
+    "tailwindcss",
+    "svg",
+    "privacy-first",
+    "client-side",
+    "batch-qr"
+  ],
+  "homepage": "https://github.com/AlphaIsYour/eno-qr-studio#readme",
+  "bugs": {
+    "url": "https://github.com/AlphaIsYour/eno-qr-studio/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlphaIsYour/eno-qr-studio.git"
+  },
+  "author": "Eno Alph",
+  "license": "MIT",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
