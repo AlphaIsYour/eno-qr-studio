@@ -71,12 +71,34 @@ describe('qr-encoder', () => {
     expect(result).toBe('tel:+123456789');
   });
 
+  it('preserves international phone number formatting', () => {
+    const withSpacesAndHyphens = encodeQRData('phone', { phone: '+62 812-3456-7890' });
+    const withParentheses = encodeQRData('phone', { phone: '(021) 555-1234' });
+
+    expect(withSpacesAndHyphens).toBe('tel:+62 812-3456-7890');
+    expect(withParentheses).toBe('tel:(021) 555-1234');
+  });
+
   it('encodes sms with smsto: format', () => {
     const result = encodeQRData('sms', {
       phone: '+123456789',
       message: 'Here is your verification code',
     });
     expect(result).toBe('smsto:+123456789:Here is your verification code');
+  });
+
+  it('preserves international phone number formatting in SMS links', () => {
+    const withSpacesAndHyphens = encodeQRData('sms', {
+      phone: '+62 812-3456-7890',
+      message: 'Hello from Indonesia',
+    });
+    const withParentheses = encodeQRData('sms', {
+      phone: '(021) 555-1234',
+      message: 'Hello from Jakarta',
+    });
+
+    expect(withSpacesAndHyphens).toBe('smsto:+62 812-3456-7890:Hello from Indonesia');
+    expect(withParentheses).toBe('smsto:(021) 555-1234:Hello from Jakarta');
   });
 
   it('encodes location with latitude and longitude', () => {
