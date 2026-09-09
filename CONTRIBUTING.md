@@ -23,8 +23,8 @@ We are committed to providing an open, welcoming, and inclusive environment. Ple
 Fork the repository on GitHub, then clone your fork locally:
 
 ```bash
-git clone https://github.com/AlphaIsYour/youralpha-05-eno-qr-studio.git
-cd youralpha-05-eno-qr-studio
+git clone https://github.com/AlphaIsYour/eno-qr-studio.git
+cd eno-qr-studio
 ```
 
 ### 2. Install Dependencies

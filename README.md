@@ -2,7 +2,7 @@
 
 A high-performance, client-side QR code studio web application. Generate beautiful, highly customizable QR codes for text, URLs, Wi-Fi networks, contact cards, email, SMS, calendar events, and geographical locations — directly in your browser with zero data leakage.
 
-[![CI Status](https://github.com/AlphaIsYour/youralpha-05-eno-qr-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/AlphaIsYour/youralpha-05-eno-qr-studio/actions)
+[![CI Status](https://github.com/AlphaIsYour/eno-qr-studio/actions/workflows/ci.yml/badge.svg)](https://github.com/AlphaIsYour/eno-qr-studio/actions)
 [![Next.js](https://img.shields.io/badge/Next.js-16.2-black?logo=next.js)](https://nextjs.org/)
 [![React](https://img.shields.io/badge/React-19.2-blue?logo=react)](https://react.dev/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript)](https://www.typescriptlang.org/)
@@ -71,8 +71,8 @@ A high-performance, client-side QR code studio web application. Generate beautif
 
 ### Installation
 ```bash
-git clone https://github.com/AlphaIsYour/youralpha-05-eno-qr-studio.git
-cd youralpha-05-eno-qr-studio
+git clone https://github.com/AlphaIsYour/eno-qr-studio.git
+cd eno-qr-studio
 npm install
 ```
 
